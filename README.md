@@ -1,6 +1,6 @@
-### List_inArraySlots
+# List_inArraySlots
 ## Si Liang Lei, Nahi Khan
-# Methods
+### Methods
 1. Add elements to specific positions
 2. Remove elements from specific positions
 3. Access items from specific positions
