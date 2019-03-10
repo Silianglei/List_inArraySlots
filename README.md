@@ -1,5 +1,5 @@
 # List_inArraySlots
-## Si Liang Lei, Nahi Khan
+## Si Liang Lei
 ### Methods
 1. Add elements to specific positions
 2. Remove elements from specific positions
