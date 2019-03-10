@@ -1,5 +1,5 @@
 # List_inArraySlots
-## Si Liang Lei,Nahi Khan
+## Si Liang Lei, Nahi Khan
 
 ### Fields
 1. int filledElements
