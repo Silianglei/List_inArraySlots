@@ -77,4 +77,63 @@ public class List_inArraySlots {
                 refArray[index] = oldArray[index];
               }
    }
+
+   /**
+     accessor
+     @return element @index from this list
+     precondition: @index is within the bounds of the array.
+         (Having warned the user about this precondition,
+          you should NOT complicate your code to check
+          whether user violated the condition.)
+    */
+   public int get( int index ) {
+     return refArray[index];
+   }
+
+
+   /**
+     Set value at @index to @newValue
+
+     @return old value at @index
+     @precondition: @index is within the bounds of this list.
+    */
+   public int set( int index, int newValue ) {
+     int oldValue = refArray[index];
+     refArray[index]= newValue;
+     return oldValue;
+   }
+
+
+   /**
+     Insert @value at position @index in this list.
+
+     Shift the element currently at that position (if any)
+     and any subsequent elements to the right
+     (that is, increase the index associated with each).
+    */
+    public void add( int index, int value) {
+      for(int num = filledElements; num > index; num--){
+      refArray[num] = refArray[num - 1];
+    }
+      set(index, value);
+      filledElements++;
+    }
+
+
+   /**
+     Remove the element at position @index in this list.
+
+     Shift any subsequent elements to the left (that is,
+     decrease the index associated with each).
+
+     @return the value that was removed from the list
+    */
+    public int remove( int index) {
+      int oldValue = refArray[index];
+      for(int num = index; num < filledElements - 1; num++){
+      refArray[num] = refArray[num + 1];
+    }
+      refArray[filledElements--] = 0;
+      return oldValue;
+    }
 }
